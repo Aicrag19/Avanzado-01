@@ -18,11 +18,11 @@ function CardDetail({
 	tipo,
 }: Props) {
 	return (
-		<div>
+		<div className="flex flex-col items-center border-4 bg-gray-600 w-2/4">
 			<h3>
 				{nombre} (#{numero})
 			</h3>
-			<img src={imagen} alt={nombre} />
+			<img className="border-4 bg-gray-500" src={imagen} alt={nombre} />
 			<p>Tipo: {tipo}</p>
 			<p>Ataque: {ataque}</p>
 			<p>Defensa: {defensa}</p>

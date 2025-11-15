@@ -8,12 +8,7 @@ const mostrarCartas = (numero: number, pinta: string) => {
 
 function App() {
 	return (
-		<div>
-			<h1>Hola mundo</h1>
-			<Cartas numero={5} pinta={"Trebol ♣"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={2} pinta={"corazon ♥"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={3} pinta={"pica ♠"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={4} pinta={"diamante 💎"} mostrarCartas={mostrarCartas} />
+		<div className="flex flex-col items-center bg-red-500">
 			<CardDetail
 				ataque={122}
 				nombre="Charizard"
@@ -23,6 +18,11 @@ function App() {
 				numero={373}
 				tipo="Fuego"
 			/>
+			<h1>Hola mundo</h1>
+			<Cartas numero={5} pinta={"Trebol ♣"} mostrarCartas={mostrarCartas} />
+			<Cartas numero={2} pinta={"corazon ♥"} mostrarCartas={mostrarCartas} />
+			<Cartas numero={3} pinta={"pica ♠"} mostrarCartas={mostrarCartas} />
+			<Cartas numero={4} pinta={"diamante 💎"} mostrarCartas={mostrarCartas} />
 		</div>
 	);
 }
