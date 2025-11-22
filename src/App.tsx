@@ -1,30 +1,36 @@
 import "./App.css";
-import Cartas from "./components/Carta";
-import CardDetail from "./components/detalle_carta";
-
-const mostrarCartas = (numero: number, pinta: string) => {
-	alert(`Carta de numero:${numero} y de pinta ${pinta}`);
-};
+//import Cartas from "./components/Carta";
+//import CardDetail from "./components/detalle_carta";
+import Chat from "./components/Chat";
 
 function App() {
 	return (
-		<div className="flex flex-col items-center bg-red-500">
-			<CardDetail
-				ataque={122}
-				nombre="Charizard"
-				defensa={80}
-				descripcion="charizard mi pokemon favorito Xd"
-				imagen="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png"
-				numero={373}
-				tipo="Fuego"
+		<div className="bg-gray-600 w-300">
+			<Chat
+				nombre="Maria"
+				mensaje="hola"
+				imagen="./src/components/imagenes/1.jpg"
+				hora={6}
 			/>
-			<h1>Hola mundo</h1>
-			<Cartas numero={5} pinta={"Trebol ♣"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={2} pinta={"corazon ♥"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={3} pinta={"pica ♠"} mostrarCartas={mostrarCartas} />
-			<Cartas numero={4} pinta={"diamante 💎"} mostrarCartas={mostrarCartas} />
+			<Chat
+				nombre="Delenyer"
+				mensaje="Hola"
+				imagen="./src/components/imagenes/2.jpeg"
+				hora={5}
+			/>
+			<Chat
+				nombre=""
+				mensaje="Charizard"
+				imagen="./src/components/imagenes/3.jpg"
+				hora={2}
+			/>
+			<Chat
+				nombre="hola"
+				mensaje="Charizard"
+				imagen="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png"
+				hora={10}
+			/>
 		</div>
 	);
 }
-
 export default App;
